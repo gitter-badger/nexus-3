@@ -1,0 +1,12 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^core/index.php[nc]
+RewriteRule ^(.*)$ http://www.example.tld/core/index.php/$1 [r=301,nc]
+
+//301 Redirect Old File
+Redirect 301 index.php core/index.php
+
+//301 Redirect Entire Directory
+RedirectMatch 301 /(.*) /core/$1
+ 
