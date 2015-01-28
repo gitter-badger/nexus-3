@@ -19,8 +19,7 @@ else
 {
 echo "
     <center>
-    <img src='https://frostbitetech.org/client/ftp/images/eXtplorer-horizontal2.png'>
-    <h2>This domain is running an invalid FRAMEWORK License Key</h2>
+    <h2>Invalid Nexus License Key</h2>
     </center>
     ";
 }
